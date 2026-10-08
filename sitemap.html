@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>יפן למטייל - מפת האתר</title>
+    <link rel="icon" href="images/Logo2.png" type="image/png">
+    <link rel="stylesheet" href="styles/myStyle.css">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Logo2.png" alt="לוגו יפן למטייל" title="יפן למטייל" />
+            </a>
+        </div>
+        <nav aria-label="תפריט ראשי">
+            <ul>
+                <li><a href="index.html" class="active">דף בית</a></li>
+
+                <!-- תפריט נפתח ראשון: יעדים -->
+                <li>
+                    <a href="#">יעדים</a>
+                    <ul>
+                        <li><a href="tokyo.html">טוקיו</a></li>
+                        <li><a href="kyoto.html">קיוטו</a></li>
+                        <li><a href="#" class="notActive">הר פוג'י</a></li>
+                    </ul>
+                </li>
+
+                <!-- תפריט נפתח שני: תרבות ומסורת -->
+                <li>
+                    <a href="#">תרבות ומסורת</a>
+                    <ul>
+                        <li><a href="#" class="notActive">טקס תה מסורתי</a></li>
+                        <li><a href="#" class="notActive">גנים יפניים</a></li>
+                        <li><a href="#" class="notActive">פסטיבלים בעולם</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= תוכן מרכזי - מפת האתר ================= -->
+    <main>
+        <!-- פירורי לחם -->
+        <div class="breadcrumb breadcrumb-box" style="padding: 10px 20px;">
+            <a href="index.html">דף בית</a> &gt; <span>מפת האתר</span>
+        </div>
+
+        <section class="sitemap-header-section">
+            <h1 class="sitemap-page-title">מפת האתר</h1>
+            <p class="sitemap-page-subtitle">כל התכנים שלנו במקום אחד.</p>
+
+            <!-- קופסאות הקישורים של מפת האתר בסדר: כללי -> יעדים -> תרבות ומסורת -->
+            <div class="sitemap-container">
+
+                <!-- קופסה 1: כללי (מימין) -->
+                <div class="sitemap-box">
+                    <h2>כללי</h2>
+                    <ul>
+                        <li><a href="index.html">דף בית</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צור קשר</a></li>
+                        <li><a href="sitemap.html">מפת האתר</a></li>
+                    </ul>
+                </div>
+
+                <!-- קופסה 2: יעדים (באמצע) -->
+                <div class="sitemap-box">
+                    <h2>יעדים</h2>
+                    <ul>
+                        <li><a href="tokyo.html">טוקיו</a></li>
+                        <li><a href="kyoto.html">קיוטו</a></li>
+                        <li><a href="#" class="notActive">הר פוג'י</a></li>
+                    </ul>
+                </div>
+
+                <!-- קופסה 3: תרבות ומסורת (שמאל) -->
+                <div class="sitemap-box">
+                    <h2>תרבות ומסורת</h2>
+                    <ul>
+                        <li><a href="#" class="notActive">טקס תה מסורתי</a></li>
+                        <li><a href="#" class="notActive">גנים יפניים</a></li>
+                        <li><a href="#" class="notActive">פסטיבלים בעולם</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= סיום האתר (Footer) ================= -->
+    <footer>
+        <p>&copy; 2026 יפן למטייל - כל הזכויות שמורות.</p>
+        <p>
+            <a href="contactUs.html">צור קשר</a> |
+            <a href="sitemap.html">מפת האתר</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

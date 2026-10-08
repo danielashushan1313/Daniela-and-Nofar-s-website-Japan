@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <title>יפן למטייל - צור קשר</title>
+    <link rel="icon" href="images/Logo2.png" type="image/png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+</head>
+<body class="contact-bg">
+<div id="container">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Logo2.png" alt="לוגו יפן למטייל" title="יפן למטייל" />
+            </a>
+        </div>
+        <nav aria-label="תפריט ראשי">
+            <ul>
+                <li><a href="index.html" class="active">דף בית</a></li>
+
+                <!-- תפריט נפתח ראשון: יעדים -->
+                <li>
+                    <a href="#">יעדים</a>
+                    <ul>
+                        <li><a href="tokyo.html">טוקיו</a></li>
+                        <li><a href="kyoto.html">קיוטו</a></li>
+                        <li><a href="#" class="notActive">הר פוג'י</a></li>
+                    </ul>
+                </li>
+
+                <!-- תפריט נפתח שני: תרבות ומסורת (לדוגמה נוספת של תת-תפריט עם דברים חסומים) -->
+                <li>
+                    <a href="#">תרבות ומסורת</a>
+                    <ul>
+                        <li><a href="#" class="notActive">טקס תה מסורתי</a></li>
+                        <li><a href="#" class="notActive">גנים יפניים</a></li>
+                        <li><a href="#" class="notActive">פסטיבלים בעולם</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= תוכן מרכזי - טופס צור קשר ================= -->
+    <main>
+        <!-- פירורי לחם לפי ההנחיות -->
+        <div class="breadcrumb breadcrumb-box">
+            <a href="index.html">דף בית</a> &gt; <span>צור קשר</span>
+        </div>
+
+        <section class="contact-section-wrapper">
+            <h1 class="contact-main-title">צור קשר - יפן למטייל</h1>
+            <p class="contact-intro-subtitle">אנחנו כאן בשבילך.</p>
+
+            <!-- אזור טופס צור קשר במרכז/רוחב מלא -->
+            <div class="contact-form-column contact-form-centered-box">
+                <h2 class="contact-section-title">יש לכם שאלה?</h2>
+                <p class="contact-desc-text">
+                    מתכננים טיול ליפן ויש לכם שאלה? נשמח לעזור בייעוץ אישי, שאלות בנוגע למסלולים ויעדים, או לשמוע הצעות ורעיונות לשיפור האתר. מלאו את הפרטים ונחזור אליכם בהקדם.
+                </p>
+
+                <!-- טופס HTML עם למעלה מ-4 סוגי שדות שונים -->
+                <form action="#" method="POST" class="contact-form">
+
+                    <!-- שדה 1: טקסט (שם מלא) -->
+                    <div class="form-row">
+                        <label for="fullname">שם מלא:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="הכניסו את שמכם המלא" required>
+                    </div>
+
+                    <!-- שדה 2: אימייל (כתובת דוא"ל) -->
+                    <div class="form-row">
+                        <label for="email">כתובת דוא"ל:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <!-- שדה 3: טלפון (מספר טלפון) -->
+                    <div class="form-row">
+                        <label for="phone">מספר טלפון:</label>
+                        <input type="tel" id="phone" name="phone" placeholder>
+                    </div>
+
+                    <!-- שדה 4: בחירה מרשימה - Select (עונת הטיול המתכוננת) -->
+                    <div class="form-row">
+                        <label for="season">עונת הטיול המתכוננת:</label>
+                        <select id="season" name="season">
+                            <option value="">בחרו עונה</option>
+                            <option value="spring">אביב (פריחת הדובדבן)</option>
+                            <option value="autumn">סתיו (שלכת אדומה)</option>
+                            <option value="summer">קיץ</option>
+                            <option value="winter">חורף</option>
+                        </select>
+                    </div>
+
+                    <!-- שדה 5: תיבת טקסט חופשי - Textarea (פירוט השאלה / הבקשה) -->
+                    <div class="form-row-top">
+                        <label for="message">פירוט השאלה / הבקשה:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="כתבו כאן את השאלה, הבקשה או כל פרט נוסף"></textarea>
+                    </div>
+
+                    <!-- כפתור שליחה -->
+                    <div class="form-submit-container">
+                        <button type="submit" class="form-submit-btn">שליחת פנייה</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= סיום האתר (Footer) ================= -->
+    <footer>
+        <p>&copy; 2026 יפן למטייל - כל הזכויות שמורות.</p>
+        <p>
+            <a href="contactUs.html">צור קשר</a> |
+            <a href="sitemap.html">מפת האתר</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

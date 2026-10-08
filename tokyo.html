@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יפן למטייל - טוקיו</title>
+    <link rel="icon" href="images/Logo2.png" type="image/png">
+    <link rel="stylesheet" href="styles/myStyle.css">
+</head>
+<body>
+
+<div id="container">
+
+    <!-- ================= פתיח ותפריט ניווט ================= -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/Logo2.png" alt="לוגו יפן למטייל" title="יפן למטייל" />
+            </a>
+        </div>
+        <nav aria-label="תפריט ראשי">
+            <ul>
+                <li><a href="index.html" class="active">דף בית</a></li>
+
+                <!-- תפריט נפתח ראשון: יעדים -->
+                <li>
+                    <a href="#">יעדים</a>
+                    <ul>
+                        <li><a href="tokyo.html">טוקיו</a></li>
+                        <li><a href="kyoto.html">קיוטו</a></li>
+                        <li><a href="#" class="notActive">הר פוג'י</a></li>
+                    </ul>
+                </li>
+
+                <!-- תפריט נפתח שני: תרבות ומסורת (לדוגמה נוספת של תת-תפריט עם דברים חסומים) -->
+                <li>
+                    <a href="#">תרבות ומסורת</a>
+                    <ul>
+                        <li><a href="#" class="notActive">טקס תה מסורתי</a></li>
+                        <li><a href="#" class="notActive">גנים יפניים</a></li>
+                        <li><a href="#" class="notActive">פסטיבלים בעולם</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">אודות</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= תוכן מרכזי של עמוד טוקיו ================= -->
+    <main>
+        <!-- פירורי לחם לפי ההנחיות -->
+        <div class="breadcrumb breadcrumb-box">
+            <a href="index.html">דף בית</a> &gt; <span>טוקיו</span>
+        </div>
+
+        <section style="padding: 30px 20px;">
+            <h1 class="tokyo-main-title">טוקיו - הלב המודרני של יפן</h1>
+
+            <p class="tokyo-intro-text">
+                טוקיו היא אחת הערים המרתקות והשוקקות ביותר בעולם. בעיר זו שוכנים גורדי שחקים עתידניים וטכנולוגיה מתקדמת לצד מקדשים עתיקים, גנים מסורתיים ושקט יוצא דופן. המבקרים בטוקיו נהנים מחוויה עירונית עוצמתית, תחבורה ציבורית יעילה באופן חסר תקדים, וקולינריה ברמה העולמית הגבוהה ביותר.
+            </p>
+
+            <!-- אזור שני הטורים: טקסט מימין, תמונה משמאל -->
+            <div class="tokyo-content-grid">
+
+                <!-- טור טקסט ורשימות (מופיע מימין כי האתר בעברית) -->
+                <div class="tokyo-text-column">
+                    <h2 class="tokyo-section-title">גלו את טוקיו התוססת: שכונות מרכזיות</h2>
+
+                    <p><strong>שינגוקו (Shinjuku):</strong></p>
+                    <ul class="tokyo-list-short">
+                        <li>לב העסקים והקניות של העיר.</li>
+                        <li>גורדי שחקים איקוניים (כולל תצפית).</li>
+                        <li>חיי לילה תוססים ובלתי נגמרים.</li>
+                    </ul>
+
+                    <p><strong>שיבויה (Shibuya):</strong></p>
+                    <ul class="tokyo-list-short">
+                        <li>מעבר החצייה המפורסם בעולם.</li>
+                        <li>מרכז אופנת רחוב ותרבות צעירה.</li>
+                        <li>פסל האצ'יקו המפורסם.</li>
+                    </ul>
+
+                    <p><strong>גינזה (Ginza):</strong></p>
+                    <ul class="tokyo-list-long">
+                        <li>רובע הקניות היוקרתי.</li>
+                        <li>בוטיקים בינלאומיים וחנויות כלבו.</li>
+                        <li>מסעדות ואמנות.</li>
+                    </ul>
+
+                    <h2 class="tokyo-section-title">טיפים חשובים למטייל</h2>
+                    <ul class="tokyo-tips-list">
+                        <li><strong>תחבורה:</strong> מומלץ לרכוש כרטיס נטען Suica או Pasmo לתנועה נוחה ברכבות.</li>
+                        <li><strong>תרבות:</strong> שימו לב לכללי הנימוס, במיוחד לגבי דמי שירות (אינם נהוגים).</li>
+                        <li><strong>עונות:</strong> האביב (פריחת הדובדבן) והסתיו נחשבים לתקופות האידיאליות לביקור.</li>
+                    </ul>
+                </div>
+
+                <!-- טור תמונה (מופיע משמאל) -->
+                <div class="tokyo-image-column">
+                    <img src="images/pageTokyo.avif" alt="מבט אווירי על גורדי השחקים והרחובות המוארים של טוקיו בלילה"
+                         title="טוקיו המוארת">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= סיום האתר (Footer) ================= -->
+    <footer>
+        <p>&copy; 2026 יפן למטייל - כל הזכויות שמורות.</p>
+        <p>
+            <a href="contactUs.html">צור קשר</a> |
+            <a href="sitemap.html">מפת האתר</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>
